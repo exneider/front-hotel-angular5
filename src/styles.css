@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+/* HEADER */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+ 
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+.header {
+    background-image: url('/assets/images/header-bg.jpg');
+    background-size: cover;
+ 
+  }
+  .header .header-background {
+    background: rgba(0,44,119,0.7);
+  }
+  .header .header-container {
+    max-width: 1344px;
+    max-height: 80px;
+    margin: 0 auto;
+  }
+ 
+ .filter-box {
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(119, 119, 199, 0.3);
+    font-family: 'roboto_regular';
+    margin: 5px 0;
+}
+
+.title{
+    background-color: #fff;
+    font-family: roboto_regular;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1320px;
+    margin-top: 10px;
+}
+
+title2{
+    color: rgb(21, 122, 177) !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'roboto_regular', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    width: 70%;
+}
