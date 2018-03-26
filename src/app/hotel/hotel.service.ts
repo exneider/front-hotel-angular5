@@ -11,9 +11,9 @@ export class HotelService {
 
   public get(): Observable<any> {
 
-    //return this.http.get(environment.API_ENDPOINT + UrlServices.URL_HOTELS);
-
-    return this.http.get('../../assets/mocks/hotels.json');
+    return this.http.get(environment.API_ENDPOINT + UrlServices.URL_HOTELS);
+     //Mock service
+    //return this.http.get('../../assets/mocks/hotels.json');
 
   }
 
