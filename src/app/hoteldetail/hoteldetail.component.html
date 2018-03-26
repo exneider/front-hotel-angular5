@@ -1,0 +1,32 @@
+<div class="card_content">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <img src="{{'../../assets/images/hotels/' + hotel.image}}" class="img_hotel">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <div class="row margin-left">
+        <h4 class="title_blue"> {{hotel.name}}</h4>
+      </div>
+      <div class="row margin-left">
+        <div *ngFor="let star of listStars">
+          <span class="fa fa-star ico_yellow"></span>
+        </div>
+      </div>
+      <div class="row margin-left">
+        <div *ngFor="let img of hotel.amenities">
+          <img class="ico_amenities" src="{{'../../assets/images/icons/amenities/' + img + '.svg'}}">
+        </div>
+      </div>
+      <div class="row margin-left">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 border-dotted prices">
+      <p class="text_price">Precio por noche por habitación</p>
+      <p class="text_price_orange">ARS
+        <strong>{{hotel.price}}</strong>
+      </p>
+      <button type="button" class="btn btn-blue">Ver hotel</button>
+    </div>
+
+  </div>
+</div>

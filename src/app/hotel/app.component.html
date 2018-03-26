@@ -1,0 +1,15 @@
+<spinner backgroundColor="#004388" spinner="sk-three-bounce">
+  </spinner>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <app-hotelfilter (findByName)="findHotelByName($event)" (filterStars)="findHotelByStars($event)"></app-hotelfilter>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8">
+      <div *ngFor="let hotel of hotels">
+        <app-hoteldetail [hotel]="hotel"></app-hoteldetail>
+      </div>
+    </div>
+  </div>
+</div>

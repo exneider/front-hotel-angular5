@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 /* HEADER */
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	background: #f2f2f2; 
-	font-size: 1em;
-	line-height: 1.5em;
+ 
+*{
+    margin: 0px;
+}
+   
+body{
+    background-color: #F4F2F2 !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+   
+h4{
+    font-weight: 700;
+    font-size: 16px;
+    font-family:'Open Sans', sans-serif;
 }
  
 h1 {
@@ -18,48 +23,76 @@ h1 {
 	text-align: center;
 	font-weight: 300;
 }
+
 .header {
     background-image: url('/assets/images/header-bg.jpg');
     background-size: cover;
  
-  }
-  .header .header-background {
+}
+
+.header .header-background {
     background: rgba(0,44,119,0.7);
-  }
-  .header .header-container {
+}
+
+.header .header-container {
     max-width: 1344px;
     max-height: 80px;
     margin: 0 auto;
-  }
+}
  
- .filter-box {
-    background-color: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(119, 119, 199, 0.3);
-    font-family: 'roboto_regular';
-    margin: 5px 0;
+.container-fluid {
+    width: 100%;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+} 
+
+.ico_yellow{
+    font-size: 12px;
+	color: #F5B01C;
+	vertical-align: 3px;
 }
 
-.title{
-    background-color: #fff;
-    font-family: roboto_regular;
-    font-size: 16px;
-    margin: 0;
-    padding: 10px;
+.border-dotted {
+    border-left: 2px solid #ccc;
+     border-left-style: dotted;
+  }
+  
+  .title_blue{
+	font-size: 14px;
+	font-family:'Open Sans', sans-serif;
+	color: #007CAD;
+	font-weight: 700;
 }
 
-.container {
-    max-width: 1320px;
-    margin-top: 10px;
+.ico_blue{
+	font-size: 14px;
+	color: #007CAD;
 }
 
-title2{
-    color: rgb(21, 122, 177) !important;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: inline-block;
-    font-family: 'roboto_regular', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 15px;
-    width: 70%;
+.btn-blue{
+	color: #ffffff;
+	background-color: #002371;
+	border-color: #002371;
 }
+
+.margin-left{
+   margin-left:0 !important;
+}
+
+.border-required {
+    border-color: #ED1B2D !important;
+}
+
+  @media only screen and (max-width : 767px) {
+  
+      .border-dotted {
+        border-left: 0px;
+        border-left-style: none;
+        border-top: 2px solid #ccc;
+        border-top-style: dotted;
+    }
+  }
+  

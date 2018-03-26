@@ -1,0 +1,36 @@
+.card_content {
+	background-color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
+    margin-top: 10px;
+}
+
+.img_hotel{
+	width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.amenities{
+	margin: 1px;
+}
+
+.ico_amenities{
+	width: 16px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.text_price{
+	font-size: 12px;
+}
+
+.text_price_orange{
+	font-size: 24px;
+	color: #E86611;
+}
+.prices{
+	padding: 20px 0px 0px 0px;
+	text-align: center;
+}

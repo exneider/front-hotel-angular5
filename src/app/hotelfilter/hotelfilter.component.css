@@ -1,0 +1,40 @@
+.filter-content{
+	background-color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
+    margin-top: 10px;
+}
+
+.filter-content-2{
+	background-color: #ffffff;
+    padding: 10px 10px 10px 10px;;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
+    margin-top: 5px;
+}
+
+.btn-blue:hover, 
+.btn-blue:focus, 
+.btn-blue:active, 
+.btn-blue.active, 
+.open>.dropdown-toggle.btn-blue {
+    color: #ffffff;
+	background-color: #002371 !important;
+	border-color: #002371 !important;
+}
+
+.form-check{
+	margin: 0px 25px 0;
+}
+
+.form-check-label{
+	font-size: 12px;
+	vertical-align: 3px;
+}
+
+.fa-sort{
+    float: right;
+}
+
+.pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<div>
+  <div class="filter-content">
+    <h4>Filtros</h4>
+  </div>
+  <div class="filter-content-2">
+    <form #form="ngForm">
+      <span class="fa fa-search ico_blue"></span>
+      <span class="title_blue">Nombre del Hotel</span>
+      <a class="pointer" (click)="findNameFilter = !findNameFilter">
+        <i *ngIf="!findNameFilter" class="fa fa-sort-desc fa-sort ico_blue" aria-hidden="true"></i>
+        <i *ngIf="findNameFilter" class="fa fa-sort-asc fa-sort ico_blue" aria-hidden="true"></i>
+      </a>
+      <div class="clearfix">&nbsp;</div>
+      <div *ngIf="findNameFilter" class="row">
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="filterHotel.name" class="form-control" placeholder="Ingrese el nombre del hotel" id="nombre"
+            name="nombre" required #nombre="ngModel">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" (click)="findHotelByName()" class="btn btn-blue">Buscar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="filter-content-2">
+    <span class="fa fa-star ico_blue"></span>
+    <span class="title_blue">Estrellas</span>
+    <a class="pointer" (click)="findStarFilter = !findStarFilter">
+      <i *ngIf="!findStarFilter" class="fa fa-sort-desc fa-sort ico_blue" aria-hidden="true"></i>
+      <i *ngIf="findStarFilter" class="fa fa-sort-asc fa-sort ico_blue" aria-hidden="true"></i>
+    </a>
+    <div class="clearfix">&nbsp;</div>
+    <div *ngIf="findStarFilter">
+      <div class="row">
+        <div class="form-check">
+          <input class="form-check-input position-static" [checked]="isAllChecked()" (change)="selectAll($event)" [(ngModel)]="checkAll"
+            type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+          <label class="form-check-label" for="exampleRadios1">Todas las estrellas</label>
+        </div>
+      </div>
+      <div *ngFor="let s of filterHotel.stars">
+        <div class="row">
+          <div class="form-check">
+            <div class="row margin-left">
+              <input class="form-check-input position-static" (change)="selectCheckStar()" [(ngModel)]="s.check" type="checkbox" id="blankCheckbox"
+                value="option1" aria-label="...">
+              <div *ngFor="let star of s.listStars">
+                <span class="fa fa-star ico_yellow"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
